@@ -1,0 +1,1 @@
+SELECT * FROM time_sm.Time_Wasters;
