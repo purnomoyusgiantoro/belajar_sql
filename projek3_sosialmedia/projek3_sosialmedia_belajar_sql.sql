@@ -27,8 +27,18 @@ select Location, avg(Age) as avg_location
 from Time_Wasters
 group by Location;
 
--- identifikasi jumlah penggunaan
+-- identifikasi jumlah penggunaan having
 
+select count(UserID),Location
+from Time_Wasters
+group by Location
+order by count(UserID) desc;
+
+
+select count(Location),ConnectionType
+from Time_Wasters
+group by ConnectionType
+order by count(Location) desc;
 
 
 
