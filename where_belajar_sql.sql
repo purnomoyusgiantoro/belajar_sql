@@ -40,6 +40,26 @@ select *
 from employee_demographics
 where not age >= 36 or gender = 'female';
 
+select *
+from employee_demographics
+where first_name like '%c%' ;
+
+select *
+from employee_demographics
+where first_name like 'a%' ;
+
+select *
+from employee_demographics
+where first_name like '_a%' ;
+
+select *
+from employee_demographics
+where first_name like '__a%' ;
+select *
+from employee_demographics
+where first_name like 'a__' ;
+
+
 
 
 
